@@ -1,0 +1,32 @@
+/* tailwind use 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*/
+
+@import '_assets/variables';
+@import '_assets/placeholder';
+@import '_assets/mixins';
+@import '_assets/layout';
+
+.navbar {
+    > div {
+        display: inline-block;
+        margin: 0 1rem 0 0;
+    }
+    a {
+        color: $fontBlackDark;
+        text-decoration: none;
+        
+        &:hover {
+            color: $brandDark;
+        }
+
+        &.point {
+            color: $brandPrimary;
+            /* @apply bg-blue-500 text-white;  tailwind use */
+        }
+    }
+}
+
+
